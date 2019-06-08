@@ -1,13 +1,15 @@
 # GENIVI/vsomeip Bazel Example
 
+# Requirements
+
+This project has only been tested on Ubuntu 18 (bionic).
+
 # Setup
 
-Run the 'ubuntu' script
+Run the 'ubuntu' script.
 
 # Dependencies
 
-- [clang-format](https://stackoverflow.com/questions/20756924/how-can-i-install-clang-format-in-ubuntu)
-- [cppCheck](http://cppcheck.sourceforge.net)
 - [GoogleTest](https://github.com/google/googletest) for unit testing and mocking
 - [GENIVI/vsomeip](https://github.com/GENIVI/vsomeip) SOME/IP stands for Scalable service-Oriented MiddlewarE over IP
 
@@ -29,15 +31,9 @@ VBoxManage setextradata virtual_machine_name VBoxInternal2/SharedFoldersEnableSy
 
 - vscode-bazel
 - C/C++ (Microsoft)
-- C/C++ Advanced Lint
-    - [See also](https://stackoverflow.com/questions/45160650/why-do-i-get-error-messages-like-unable-to-activate-xx-analyzer-in-vscode)
-    - To disable the warning about flexlint, add this to your settings:
-        - "c-cpp-flylint.flexelint.enable": false
-- Clang-Format
 - EditorConfig
 - Rainbow Brackets
 - GitLens
-- Git History
 
 ## Clean
 
@@ -59,7 +55,8 @@ bazel test -s test
 
 ## Run test, viewing console output
 
-The subdirectory of bazel-out depends on your operating system. Replace os_name below.
+The subdirectory of bazel-out depends on your operating system. For Ubuntu, it's
+k8-fastbuild.
 
 ```bash
 bazel-out/k8-fastbuild/bin/test/test -s
