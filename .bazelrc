@@ -1,0 +1,7 @@
+# See https://docs.bazel.build/versions/master/user-manual.html
+
+startup 
+# --batch_cpu_scheduling
+run   --jobs 3 --cxxopt='-std=c++11' 
+build --jobs 3 --cxxopt='-std=c++11' 
+test  --jobs 3 --cxxopt='-std=c++11' 
