@@ -17,7 +17,7 @@ cmake_external(
     # However, the cmake_external dependants could use other artefacts provided by the build,
     # according to their CMake script
     shared_libraries = [
-        "libvsomeip.so.2.10.21",
+        "libvsomeip.so.2",
         "libvsomeip-cfg.so.2",
         "libvsomeip-sd.so.2",
     ],

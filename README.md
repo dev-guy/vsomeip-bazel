@@ -1,5 +1,7 @@
 # GENIVI/vsomeip Bazel Example
 
+This project builds [GENIVI/vsomeip](https://github.com/GENIVI/vsomeip) and its Boost dependencies using Bazel. This project can be used as an example of using Bazel to build external projects using cmake and Boost b2 via [bazelbuild/rules_foreign_cc](https://github.com/bazelbuild/rules_foreign_cc).
+
 # Requirements
 
 This project has only been tested on Ubuntu 18 (bionic).
