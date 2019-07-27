@@ -1,7 +1,0 @@
-{
-  "exceeddata": {
-    "job": {
-      "pulls": "SignalService?output=s1(inputs=`vehspeed,engspeed`,frequency=`10hz,100hz`)"
-    }
-  }
-}
