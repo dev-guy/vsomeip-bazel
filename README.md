@@ -6,10 +6,6 @@ This project builds [GENIVI/vsomeip](https://github.com/GENIVI/vsomeip) and its 
 
 This project has only been tested on Ubuntu 18 (bionic).
 
-# Setup
-
-Run the 'ubuntu' script.
-
 # Dependencies
 
 - [GoogleTest](https://github.com/google/googletest) for unit testing and mocking
@@ -27,15 +23,7 @@ If you share a github folder on your host, you need to enable symlinking to it. 
 VBoxManage setextradata virtual_machine_name VBoxInternal2/SharedFoldersEnableSymlinksCreate/share_name  1
 ```
 
-# Visual Studio Code Configuration
-
-## Extensions
-
-- vscode-bazel
-- C/C++ (Microsoft)
-- EditorConfig
-- Rainbow Brackets
-- GitLens
+# Usage
 
 ## Clean
 
@@ -57,11 +45,8 @@ bazel test -s test
 
 ## Run test, viewing console output
 
-The subdirectory of bazel-out depends on your operating system. For Ubuntu, it's
-k8-fastbuild.
-
 ```bash
-bazel-out/k8-fastbuild/bin/test/test -s
+bazel-bin/test/test -s
 ```
 
 The output looks like:
