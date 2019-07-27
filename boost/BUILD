@@ -23,8 +23,7 @@ boost_build(
         "cxxflags=-std=c++11",
         "variant=debug",
         "-d0",  # Minimal output
-        "-j5",  # Build with parallel processes
-        "--with-log",
+        "-j2",  # Build with parallel processes
     ],
     visibility = ["//visibility:public"],
 )
