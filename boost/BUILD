@@ -21,7 +21,6 @@ boost_build(
         "threading=multi",
         "link=shared",
         "cxxflags=-std=c++11",
-        "variant=debug",
         "-d0",  # Minimal output
         "-j2",  # Build with parallel processes
         "--with-log",
