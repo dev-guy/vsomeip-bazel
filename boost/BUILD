@@ -6,6 +6,7 @@ load("@rules_foreign_cc//tools/build_defs:boost_build.bzl", "boost_build")
 boost_build(
     name = "log",
     lib_source = "@boost//:all",
+    bootstrap_options = ["--with-toolset=clang", "--without-libraries=python"],
     shared_libraries = [
         "libboost_atomic.so.1.65.0",
         "libboost_chrono.so.1.65.0",
@@ -21,9 +22,9 @@ boost_build(
         "threading=multi",
         "link=shared",
         "cxxflags=-std=c++11",
-        "variant=debug",
         "-d0",  # Minimal output
         "-j2",  # Build with parallel processes
     ],
     visibility = ["//visibility:public"],
 )
+
