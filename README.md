@@ -4,10 +4,11 @@ This project builds [GENIVI/vsomeip](https://github.com/GENIVI/vsomeip) and its 
 
 # Requirements
 
-This project has only been tested on Ubuntu 18 (bionic).
+This project has only been tested on x86 Ubuntu 18 (bionic).
 
 # Dependencies
 
+- [Bazel 0.26.1](https://docs.bazel.build/versions/master/install.html) or later
 - [GoogleTest](https://github.com/google/googletest) for unit testing and mocking
 - [GENIVI/vsomeip](https://github.com/GENIVI/vsomeip) SOME/IP stands for Scalable service-Oriented MiddlewarE over IP
 
