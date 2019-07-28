@@ -20,8 +20,9 @@ This project was created via the [Abseil Bazel Quickstart](https://abseil.io/doc
 
 If you share a github folder on your host, you need to enable symlinking to it. Run the following command from the host's command line. Replace virtual_machine_name and share_name in the following command:
 
-```
-VBoxManage setextradata virtual_machine_name VBoxInternal2/SharedFoldersEnableSymlinksCreate/share_name  1
+```bash
+VBoxManage setextradata virtual_machine_name \
+ VBoxInternal2/SharedFoldersEnableSymlinksCreate/share_name  1
 ```
 
 # Usage
@@ -36,12 +37,6 @@ bazel clean --expunge
 
 ```bash
 bazel build -s test
-```
-
-## Run tests
-
-```bash
-bazel test -s test
 ```
 
 ## Run test, viewing console output
