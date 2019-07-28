@@ -18,7 +18,7 @@ This project was created via the [Abseil Bazel Quickstart](https://abseil.io/doc
 
 # VirtualBox Tips
 
-If you share a github folder on your host, you need to enable symlinking to it. Run the following command from the host's command line. Replace virtual_machine_name and share_name in the following command:
+If you're running Windows or OSX and run Ubuntu via VirtualBox, you can share a github folder on your host for use by the Ubuntu VM. You also need to enable symbolic linking for the share. Run the following command from the host's command line. Replace virtual_machine_name and share_name in the following command:
 
 ```bash
 VBoxManage setextradata virtual_machine_name \
